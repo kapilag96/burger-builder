@@ -21,6 +21,7 @@ export const BuildControls = (props) => {
           lessDisabled={props.lessDisabled[ctrl.type]}
         />
       ))}
+      <button className='OrderButton' disabled={!props.purchasable}>Order Now</button>
     </div>
   )
 }
